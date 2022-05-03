@@ -3,10 +3,9 @@ import QtQuick.Window 6.0
 import QtQuick.Controls 6.0
 import QtQuick.Layouts 6.0
 
-// Окно ответа на условие о размере бассейна
+
 Window {
-    id: root
-    // Говорим, что это окно является модальным
+    id: root   
     modality: Qt.ApplicationModal
     title: qsTr("Ответ")
     width: 220
@@ -31,7 +30,6 @@ Window {
 
     }
 
-    // Задаём функция для вывода информации
     function countDogs(breed){
         textCount.text = count(breed);
         root.show()
